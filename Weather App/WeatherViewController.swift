@@ -9,21 +9,35 @@ import UIKit
 
 class WeatherViewController: UIPageViewController {
 
+    let sessionConfiguration = URLSessionConfiguration.default
+   final let session = URLSession.shared
+    let decoder = JSONDecoder()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        workWithWeather()
 
-        // Do any additional setup after loading the view.
     }
     
+    func workWithWeather() {
+        
+        guard let url = URL(string: "https://api.openweathermap.org/data/3.0/onecall?lat=43.651070&lon=-79.347015&exclude=current&appid=3de81134da5a686cfd7c165a2b28776c") else {return}
+        session.dataTask(with: url) { data, urlResponse, error in
+            
+            if error == nil, let weatherPost = data {
 
-    /*
-    // MARK: - Navigation
+                let post = try? self.decoder.decode([WeatherCities].self, from: weatherPost)
+                
+            }
+            else {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                print("Error: \(error)")
+            }
+        }.resume()
+
+        
     }
-    */
-
-}
+    
+    }
+    

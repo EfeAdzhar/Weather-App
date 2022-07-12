@@ -13,6 +13,8 @@
 		B45F3F7028775923000AB213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F3F6E28775923000AB213 /* Main.storyboard */; };
 		B45F3F7228775925000AB213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45F3F7128775925000AB213 /* Assets.xcassets */; };
 		B45F3F7528775925000AB213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F3F7328775925000AB213 /* LaunchScreen.storyboard */; };
+		B48ECF2C287C49510098DFC0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ECF2B287C49510098DFC0 /* WeatherViewController.swift */; };
+		B48ECF2E287C6C1A0098DFC0 /* WeatherCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ECF2D287C6C1A0098DFC0 /* WeatherCities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B45F3F7128775925000AB213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45F3F7428775925000AB213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B45F3F7628775925000AB213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48ECF2B287C49510098DFC0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		B48ECF2D287C6C1A0098DFC0 /* WeatherCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				B45F3F6828775923000AB213 /* AppDelegate.swift */,
 				B45F3F6A28775923000AB213 /* SceneDelegate.swift */,
 				B45F3F6C28775923000AB213 /* ViewController.swift */,
+				B48ECF2B287C49510098DFC0 /* WeatherViewController.swift */,
+				B48ECF2D287C6C1A0098DFC0 /* WeatherCities.swift */,
 				B45F3F6E28775923000AB213 /* Main.storyboard */,
 				B45F3F7128775925000AB213 /* Assets.xcassets */,
 				B45F3F7328775925000AB213 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45F3F6D28775923000AB213 /* ViewController.swift in Sources */,
+				B48ECF2E287C6C1A0098DFC0 /* WeatherCities.swift in Sources */,
+				B48ECF2C287C49510098DFC0 /* WeatherViewController.swift in Sources */,
 				B45F3F6928775923000AB213 /* AppDelegate.swift in Sources */,
 				B45F3F6B28775923000AB213 /* SceneDelegate.swift in Sources */,
 			);

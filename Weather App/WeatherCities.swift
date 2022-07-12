@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+struct WeatherCities :  Codable {
+    let location : [String]
+    let current : [String]
+    
+    enum CodingCases : String, CodingKey {
+        case location
+        case current
+    }
+}
