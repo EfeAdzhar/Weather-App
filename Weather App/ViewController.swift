@@ -12,11 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var urlchik =  "http://api.weatherapi.com/v1/current.json?key=06dc3be58c7f48e7bba193458221007&q=Toronto&aqi=no"
 
-    
     //MARK: Variables
-    var citiesArray = ["Toronto", "Poltava", "Ankara", "Warsaw", "New York", "Los Angeles", ""]
+    var citiesArray = ["Toronto", "Kiev", "Ankara", "Warsaw", "New York", "Los Angeles", "London"]
     
     //MARK: ViewDidLoad
     override func viewDidLoad() {
@@ -24,8 +22,6 @@ class ViewController: UIViewController {
         setUpEverything()
         tableView.delegate = self
         tableView.dataSource = self
-        
-    
         
     }
     
@@ -70,7 +66,6 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = WeatherViewController()
-         self.present(UINavigationController(rootViewController: vc), animated: true)
-         
+        self.present(UINavigationController(rootViewController: vc), animated: true)
     }
 }
